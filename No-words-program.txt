@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+ 
+void main()
+{
+  	char str[100];
+  	int a, count;
+  	count = 1;
+  	a = 0;
+ 
+  	printf("\n Please Enter any String :  ");
+  	gets(str);
+  	 	   	
+  	while(str[a] != '\0')
+	{
+		if(str[a] == ' ' || str[a] == '\n' || str[a] == '\t')
+		{
+			count++;	
+		} 
+		a++;
+	}	
+	printf("\n The Total Number of Words in this String %s  = %d", str, count);
+	
+  	
+}

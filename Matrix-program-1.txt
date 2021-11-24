@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+    int a[10][10],e,f,r,c;
+    printf("Enter number of row\n");
+    scanf("%d",&r);
+      printf("Enter number of column\n");
+    scanf("%d",&c);  
+    
+    printf("Enter the Elements \n");
+    for( e=0;e<r;e++ )
+    {
+         for( f=0;f<c;f++ )
+         {
+             scanf("%d",&a[e][f]);
+             
+         }
+    }
+    
+    printf("Enter the Matrix \n");
+   
+   for( e=0;e<r;e++ )
+    {
+         for( f=0;f<c;f++ )
+         {
+             printf("%d\t",a[e][f]);
+             
+         }
+         printf("\n");
+    }
+    printf("Transpose the Matrix \n");
+     for( e=0;e<r;e++ )
+    {
+         for( f=0;f<c;f++ )
+         {
+             printf("%d\t",a[f][e]);
+             
+         }
+         printf("\n");
+    }
+    
+  getch();
+ 
+}

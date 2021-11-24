@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h> 
+void  main()
+{
+    int p,k,c[10],max;
+ 
+    printf("Enter the number of elements:\n") ;
+    scanf("%d",&k) ;
+ 
+    printf("Enter the elements\n") ;
+    for(p=0;p<k;p++)
+    {
+        scanf("%d",&c[p]) ;
+    }
+    
+    max=c[0];
+    for(p=1;p<k;p++)
+    {
+        if(max<c[p])
+        {
+            max=c[p];
+        }
+    }
+    printf("Largest of %d elements in an array = %d",k,max);
+}
