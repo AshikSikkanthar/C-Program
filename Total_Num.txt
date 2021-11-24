@@ -1,0 +1,15 @@
+#include<stdio.h>  
+#include<conio.h>  
+void main()
+{
+    int p,res=0;
+    printf("Enter the number:" );
+    scanf("%d",&p);
+    while(p!=0)
+    {
+        p=p/10;
+        res++;
+    }
+    printf("Total number of digits %d",res);
+   
+}   
