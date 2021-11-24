@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int a,f=0;
+    
+    printf("\n prime number between 1 to 100 :");
+    while(f<=100)
+    {
+        a=2;
+        while(a<f)
+        {
+            if(f%a==0)
+            break;
+            else
+            a++;
+        }
+        if(f==a)
+        
+           printf(" %d \t",f);
+           f++;
+        
+        }
+        
+        getch();
+        
+    }
+   
+

@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h> 
+void main()
+{
+    int s,t,v;
+ 
+    printf("\n Enter  the user input : ");
+    scanf("%d",&v);
+ 
+    for(s=v;s>=1;s--)
+    {
+        for(t=s; t<=v; t++)
+        {
+            printf(" ");
+        }
+        for(t=1; t<=s; t++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+}
+

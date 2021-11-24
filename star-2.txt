@@ -1,0 +1,31 @@
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int a, b,f, c=1,n;
+  
+
+  printf("Enter the user input from rows : ");
+  scanf("%d",&n);
+  if(f% 2 != 0)
+  {
+      
+ 
+    for(a=0; a<n; a++)
+    {
+        for(b=0; b<c; b++)
+            printf("* ");
+        c=c+2;
+        printf("\n");
+    }
+    
+  }
+  else if(f % 2 == 0){
+        
+        printf("Valid only odd number");
+        
+    }
+    getch();
+   
+}
